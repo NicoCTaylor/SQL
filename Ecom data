@@ -33,3 +33,15 @@ FROM ecom_data
 
 --My first Query told me it was 3 minutes 42 seconds on average)
 
+--I was curious how many items were purchased compared to left
+in the cart--
+
+SELECT COUNT(*) AS number_of_purchases
+FROM ecom_data
+WHERE purchase_flag = 1;
+
+SELECT COUNT(*) AS number_of_purchases
+FROM ecom_data
+WHERE purchase_flag = 0;
+
+--It came to 8 purchased and 4 items unpurchased--
